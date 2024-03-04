@@ -112,17 +112,17 @@ public class TestConfig implements CommandLineRunner {
 
         // Inserir Livros Reais (substitua pelos nomes reais e ajuste os ISBNS)
         LivroEntity livro1 = new LivroEntity(null, "Dom Casmurro", 1899, "9788574801412", editora1, Arrays.asList(autor1));
-        LivroEntity livro2 = new LivroEntity(null, "Grande Sertão: Veredas", 1956, "9788535908068", editora1, Arrays.asList(autor3));
-        LivroEntity livro3 = new LivroEntity(null, "A Hora da Estrela", 1977, "9788535908068", editora2, Arrays.asList(autor2));
-        LivroEntity livro4 = new LivroEntity(null, "Romanceiro da Inconfidência", 1953, "9788535911587", editora2, Arrays.asList(autor4));
-        LivroEntity livro5 = new LivroEntity(null, "Sentimento do Mundo", 1940, "9788520937603", editora1, Arrays.asList(autor5));
-        LivroEntity livro6 = new LivroEntity(null, "Reinações de Narizinho", 1931, "9788520925709", editora2, Arrays.asList(autor6));
-        LivroEntity livro7 = new LivroEntity(null, "A Metamorfose", 1915, "9788573261288", editora3, Arrays.asList(autor2));
-        LivroEntity livro8 = new LivroEntity(null, "O Cortiço", 1890, "9788573261288", editora3, Arrays.asList(autor1));
-        LivroEntity livro9 = new LivroEntity(null, "Memórias Póstumas de Brás Cubas", 1881, "9788520937078", editora4, Arrays.asList(autor5));
-        LivroEntity livro10 = new LivroEntity(null, "Quincas Borba", 1891, "9788573262346", editora4, Arrays.asList(autor1));
-        LivroEntity livro11 = new LivroEntity(null, "O Alienista", 1882, "9788572326101", editora1, Arrays.asList(autor3));
-        LivroEntity livro12 = new LivroEntity(null, "O Primo Basílio", 1878, "9788525408167", editora2, Arrays.asList(autor4));
+        LivroEntity livro2 = new LivroEntity(null, "Grande Sertão: Veredas", 1956, "9788535908013", editora1, Arrays.asList(autor3));
+        LivroEntity livro3 = new LivroEntity(null, "A Hora da Estrela", 1977, "9788536908014", editora2, Arrays.asList(autor2));
+        LivroEntity livro4 = new LivroEntity(null, "Romanceiro da Inconfidência", 1953, "9788535911515", editora2, Arrays.asList(autor4));
+        LivroEntity livro5 = new LivroEntity(null, "Sentimento do Mundo", 1940, "9788520937616", editora1, Arrays.asList(autor5));
+        LivroEntity livro6 = new LivroEntity(null, "Reinações de Narizinho", 1931, "9788520925717", editora2, Arrays.asList(autor6));
+        LivroEntity livro7 = new LivroEntity(null, "A Metamorfose", 1915, "9788573261218", editora3, Arrays.asList(autor2));
+        LivroEntity livro8 = new LivroEntity(null, "O Cortiço", 1890, "9788573261219", editora3, Arrays.asList(autor1));
+        LivroEntity livro9 = new LivroEntity(null, "Memórias Póstumas de Brás Cubas", 1881, "9788520937020", editora4, Arrays.asList(autor5));
+        LivroEntity livro10 = new LivroEntity(null, "Quincas Borba", 1891, "9788573262321", editora4, Arrays.asList(autor1));
+        LivroEntity livro11 = new LivroEntity(null, "O Alienista", 1882, "9788572326122", editora1, Arrays.asList(autor3));
+        LivroEntity livro12 = new LivroEntity(null, "O Primo Basílio", 1878, "9788525408123", editora2, Arrays.asList(autor4));
 
         livroService.salvarLivro(livro1);
         livroService.salvarLivro(livro2);
