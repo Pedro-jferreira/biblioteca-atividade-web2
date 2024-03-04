@@ -83,34 +83,46 @@ public class TestConfig implements CommandLineRunner {
         }
 
     }
-    private void insertDados(){
-
-        EditoraEntity editora1 = new EditoraEntity(null, "Editora 1");
-        EditoraEntity editora2 = new EditoraEntity(null, "Editora 2");
+    private void insertDados() {
+        // Inserir Editoras Reais (substitua pelos nomes reais)
+        EditoraEntity editora1 = new EditoraEntity(null, "Companhia das Letras");
+        EditoraEntity editora2 = new EditoraEntity(null, "Record");
+        EditoraEntity editora3 = new EditoraEntity(null, "Intrínseca");
+        EditoraEntity editora4 = new EditoraEntity(null, "Objetiva");
 
         editoraService.salvarEditora(editora1);
         editoraService.salvarEditora(editora2);
+        editoraService.salvarEditora(editora3);
+        editoraService.salvarEditora(editora4);
 
-
-        AutorEntity autor1 = new AutorEntity(null, "Autor 1");
-        AutorEntity autor2 = new AutorEntity(null, "Autor 2");
-        AutorEntity autor3 = new AutorEntity(null, "Autor 3");
-        AutorEntity autor4 = new AutorEntity(null, "Autor 4");
+        // Inserir Autores Reais (substitua pelos nomes reais)
+        AutorEntity autor1 = new AutorEntity(null, "Machado de Assis");
+        AutorEntity autor2 = new AutorEntity(null, "Clarice Lispector");
+        AutorEntity autor3 = new AutorEntity(null, "Guimarães Rosa");
+        AutorEntity autor4 = new AutorEntity(null, "Cecília Meireles");
+        AutorEntity autor5 = new AutorEntity(null, "Carlos Drummond de Andrade");
+        AutorEntity autor6 = new AutorEntity(null, "Lya Luft");
 
         autorService.salvarAutor(autor1);
         autorService.salvarAutor(autor2);
         autorService.salvarAutor(autor3);
         autorService.salvarAutor(autor4);
+        autorService.salvarAutor(autor5);
+        autorService.salvarAutor(autor6);
 
-
-        LivroEntity livro1 = new LivroEntity(null, "Livro 1", 2022, "ISBN1", editora1, Arrays.asList(autor1, autor2));
-        LivroEntity livro2 = new LivroEntity(null, "Livro 2", 2022, "ISBN2", editora1, Arrays.asList(autor3, autor4));
-        LivroEntity livro3 = new LivroEntity(null, "Livro 3", 2022, "ISBN3", editora2, Arrays.asList(autor1, autor4));
-        LivroEntity livro4 = new LivroEntity(null, "Livro 4", 2022, "ISBN4", editora2, Arrays.asList(autor2, autor3));
-        LivroEntity livro5 = new LivroEntity(null, "Livro 5", 2022, "ISBN5", editora1, Arrays.asList(autor1, autor3));
-        LivroEntity livro6 = new LivroEntity(null, "Livro 6", 2022, "ISBN6", editora2, Arrays.asList(autor2, autor4));
-        LivroEntity livro7 = new LivroEntity(null, "Livro 7", 2022, "ISBN7", editora1, Arrays.asList(autor3, autor4));
-        LivroEntity livro8 = new LivroEntity(null, "Livro 8", 2022, "ISBN8", editora2, Arrays.asList(autor1, autor2));
+        // Inserir Livros Reais (substitua pelos nomes reais e ajuste os ISBNS)
+        LivroEntity livro1 = new LivroEntity(null, "Dom Casmurro", 1899, "9788574801412", editora1, Arrays.asList(autor1));
+        LivroEntity livro2 = new LivroEntity(null, "Grande Sertão: Veredas", 1956, "9788535908068", editora1, Arrays.asList(autor3));
+        LivroEntity livro3 = new LivroEntity(null, "A Hora da Estrela", 1977, "9788535908068", editora2, Arrays.asList(autor2));
+        LivroEntity livro4 = new LivroEntity(null, "Romanceiro da Inconfidência", 1953, "9788535911587", editora2, Arrays.asList(autor4));
+        LivroEntity livro5 = new LivroEntity(null, "Sentimento do Mundo", 1940, "9788520937603", editora1, Arrays.asList(autor5));
+        LivroEntity livro6 = new LivroEntity(null, "Reinações de Narizinho", 1931, "9788520925709", editora2, Arrays.asList(autor6));
+        LivroEntity livro7 = new LivroEntity(null, "A Metamorfose", 1915, "9788573261288", editora3, Arrays.asList(autor2));
+        LivroEntity livro8 = new LivroEntity(null, "O Cortiço", 1890, "9788573261288", editora3, Arrays.asList(autor1));
+        LivroEntity livro9 = new LivroEntity(null, "Memórias Póstumas de Brás Cubas", 1881, "9788520937078", editora4, Arrays.asList(autor5));
+        LivroEntity livro10 = new LivroEntity(null, "Quincas Borba", 1891, "9788573262346", editora4, Arrays.asList(autor1));
+        LivroEntity livro11 = new LivroEntity(null, "O Alienista", 1882, "9788572326101", editora1, Arrays.asList(autor3));
+        LivroEntity livro12 = new LivroEntity(null, "O Primo Basílio", 1878, "9788525408167", editora2, Arrays.asList(autor4));
 
         livroService.salvarLivro(livro1);
         livroService.salvarLivro(livro2);
@@ -120,8 +132,12 @@ public class TestConfig implements CommandLineRunner {
         livroService.salvarLivro(livro6);
         livroService.salvarLivro(livro7);
         livroService.salvarLivro(livro8);
-
+        livroService.salvarLivro(livro9);
+        livroService.salvarLivro(livro10);
+        livroService.salvarLivro(livro11);
+        livroService.salvarLivro(livro12);
     }
+
     private int escolha() {
         while (true) {
             System.out.println("""
