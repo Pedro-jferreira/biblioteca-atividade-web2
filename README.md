@@ -4,7 +4,8 @@
 
 O objetivo deste projeto é criar uma aplicação Java que faça uso de um ORM (Hibernate) para realizar operações CRUD com base no seguinte diagrama:
 
-<img src="\\atividade2\\img.png" title="img"/>
+![Logo](https://github.com/Pedro-jferreira/biblioteca-atividade-web2/blob/main/img.png?raw=true)
+
 
 Deve-se definir as entidades e criar métodos CRUD para as três tabelas apresentadas no diagrama. Adicionalmente, as buscas implementadas devem ser capazes de recuperar as seguintes informações:
 
