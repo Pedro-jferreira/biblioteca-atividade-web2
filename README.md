@@ -4,7 +4,7 @@
 
 O objetivo deste projeto é criar uma aplicação Java que faça uso de um ORM (Hibernate) para realizar operações CRUD com base no seguinte diagrama:
 
-<img src="C:\Users\pedro\faculdade\5°periodo\web2\atividade2 (1)\atividade2\img.png" title="img"/>
+![](C:\Users\pedro\faculdade\5°periodo\web2\atividade2 (1)\atividade2\img.png "img")
 
 Deve-se definir as entidades e criar métodos CRUD para as três tabelas apresentadas no diagrama. Adicionalmente, as buscas implementadas devem ser capazes de recuperar as seguintes informações:
 
